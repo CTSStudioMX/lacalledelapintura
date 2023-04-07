@@ -1,2 +1,4 @@
 # lacalledelapintura
-Sitio lacalledelapintura.com.mx
+Sitio lacalledelapintura
+
+Desarrollo del sitio de Grupo Sayer
