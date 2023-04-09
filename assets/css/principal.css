@@ -3,7 +3,9 @@
 body {
     font-family: "Open Sans" sans-serif;
 }
-
+.text-container {
+  align-items: center;
+}
 
 
 
