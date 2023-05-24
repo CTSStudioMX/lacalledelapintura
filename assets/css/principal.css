@@ -175,7 +175,7 @@ img {
 .upper-landing {
   padding: 25rem 0;
   position: relative;
-  background: url("/assets/img/fotos/Foto-Fachada.png") no-repeat center center/cover;
+  background: url("../img/fotos/Foto-Fachada.png") no-repeat center center/cover;
 }
 
 .upper-landing {
