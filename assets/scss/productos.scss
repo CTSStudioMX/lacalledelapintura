@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,600i');
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700');
+
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background: #7E7E7E;
+    padding: 100px 0px;
+}
+
+main {
+    width: 1280px;
+    margin: 0px auto;
+    display: block;
+    background: #fff;
+}
+
+section.product-body {
+    padding-top: 100px;
+    display: flex;
+    width: 80%;
+    .left-item {
+        width: 60%;
+        display: block;
+        img {
+            width: 350px;
+            margin: 0px auto;
+            display: block;
+            }
+        }
+        .right-item {
+            width: 40%;
+            display: block;
+            }
+}
+
+.product-title {
+    display: flex;
+    h1 {
+        font-family: 'Karla', sans-serif;
+        color: #343434;
+        font-weight: 300;
+        margin: 0px 0px;
+        font-size: 24px;
+        letter-spacing: 1px;    
+    }    
+    span-price {
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-family: 'Karla', sans-serif;
+        margin-left: auto;
+        justify-content: flex-start;
+        color: #564C42;
+        }
+}
+
+span.product-cat {
+    color: #C9A680;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    }
+
+span.product-sku {
+    color: #B3AEAA;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    display: block;
+    margin-top: 25px;
+    }
+    
+p.desc {
+    font-family: 'Karla', sans-serif;
+    color: #888179;
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    strong {
+        color: #3C3B3B;
+        }
+    }
+
+        

@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,600i");
+@import url("https://fonts.googleapis.com/css?family=Karla:400,700");
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background: #fff;
+  padding: 100px 0px;
+}
+
+main {
+  width: 1280px;
+  margin: 0px auto;
+  display: block;
+  background: #fff;
+}
+
+section.product-body {
+  padding-top: 100px;
+  display: flex;
+  width: 80%;
+}
+section.product-body .left-item {
+  width: 60%;
+  display: block;
+}
+section.product-body .left-item img {
+  width: 350px;
+  margin: 0px auto;
+  display: block;
+}
+section.product-body .right-item {
+  width: 40%;
+  display: block;
+}
+
+.product-title {
+  display: flex;
+}
+.product-title h1 {
+  font-family: "Karla", sans-serif;
+  color: #343434;
+  font-weight: 300;
+  margin: 0px 0px;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+.product-title span-price {
+  font-size: 40px;
+  letter-spacing: 1px;
+  font-family: "Karla", sans-serif;
+  margin-left: auto;
+  justify-content: flex-start;
+  color: #564C42;
+}
+
+span.product-cat {
+  color: #C9A680;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+}
+
+span.product-sku {
+  color: #B3AEAA;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  display: block;
+  margin-top: 25px;
+}
+
+p.desc {
+  font-family: "Karla", sans-serif;
+  color: #888179;
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+p.desc strong {
+  color: #3C3B3B;
+}
+
+/* Boton de Descarga */
+.buttonW {
+  border: 1px solid #25D366;
+  padding: 7px;
+  background-color: #25D366;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: none;
+  font-family: 'Helvetica', Arial, Helvetica, sans-serif;
+  border-radius: 25px;
+}
+
+.button {
+  border: 1px solid #186cb4;
+  padding: 7px;
+  background-color: #186cb4;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: none;
+  font-family: 'Helvetica', Arial, Helvetica, sans-serif;
+  border-radius: 25px;
+}
+
+/*Footer*/
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+.footer-section {
+background: #151414;
+position: relative;
+}
+.footer-cta {
+border-bottom: 1px solid #373636;
+}
+.single-cta i {
+color: #fcc827;
+font-size: 30px;
+float: left;
+margin-top: 8px;
+}
+.cta-text {
+padding-left: 15px;
+display: inline-block;
+}
+.cta-text h4 {
+color: #fff;
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 2px;
+}
+.cta-text span {
+color: #757575;
+font-size: 15px;
+}
+.footer-content {
+position: relative;
+z-index: 2;
+}
+.footer-pattern img {
+position: absolute;
+top: 0;
+left: 0;
+height: 330px;
+background-size: cover;
+background-position: 100% 100%;
+}
+.footer-logo {
+margin-bottom: 30px;
+}
+.footer-logo img {
+  max-width: 200px;
+}
+.footer-text p {
+margin-bottom: 14px;
+font-size: 14px;
+    color: #7e7e7e;
+line-height: 28px;
+}
+.footer-social-icon span {
+color: #fff;
+display: block;
+font-size: 20px;
+font-weight: 700;
+font-family: 'Poppins', sans-serif;
+margin-bottom: 20px;
+}
+.footer-social-icon a {
+color: #fff;
+font-size: 16px;
+margin-right: 15px;
+}
+.footer-social-icon i {
+height: 40px;
+width: 40px;
+text-align: center;
+line-height: 38px;
+border-radius: 50%;
+}
+.facebook-bg{
+background: #3B5998;
+}
+.twitter-bg{
+background: #55ACEE;
+}
+.instagram-bg{
+background: #DD4B39;
+}
+.footer-widget-heading h3 {
+color: #fff;
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 40px;
+position: relative;
+}
+.footer-widget-heading h3::before {
+content: "";
+position: absolute;
+left: 0;
+bottom: -15px;
+height: 2px;
+width: 50px;
+background: #fcc827;
+}
+.footer-widget ul li {
+display: inline-block;
+float: left;
+width: 50%;
+margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+color: #fcc827;
+}
+.footer-widget ul li a {
+color: #878787;
+text-transform: capitalize;
+}
+.subscribe-form {
+position: relative;
+overflow: hidden;
+}
+.subscribe-form input {
+width: 100%;
+padding: 14px 28px;
+background: #2E2E2E;
+border: 1px solid #2E2E2E;
+color: #fff;
+}
+.subscribe-form button {
+  position: absolute;
+  right: 0;
+  background: #fcc827;
+  padding: 13px 20px;
+  border: 1px solid #fcc827;
+  top: 0;
+}
+.subscribe-form button i {
+color: #fff;
+font-size: 22px;
+transform: rotate(-6deg);
+}
+.copyright-area{
+background: #202020;
+padding: 25px 0;
+}
+.copyright-text p {
+margin: 0;
+font-size: 14px;
+color: #878787;
+}
+.copyright-text p a{
+color: #fcc827;
+}
+.footer-menu li {
+display: inline-block;
+margin-left: 20px;
+}
+.footer-menu li:hover a{
+color: #fcc827;
+}
+.footer-menu li a {
+font-size: 14px;
+color: #878787;
+}
+
+
+
+
