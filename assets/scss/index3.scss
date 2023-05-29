@@ -1,0 +1,271 @@
+$desktop: 1024px;
+$desktop-wide: 1400px;
+$white: #fff;
+$light-grey: darken($white, 20%);
+$primary: #ff4500;
+
+$dark: #14162d;
+$light: darken($white, 10%);
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@mixin desktop-wide {
+  @media (min-width: #{$desktop-wide}) {
+    @content;
+  }
+}
+
+@mixin pseudo-fill {   
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+@mixin feature-grid-item($title, $bottom-padding) {
+  &--#{$title} {
+    background-image: url(); 
+    @media screen and (min-width: $desktop) { 
+      padding-bottom: $bottom-padding; 
+    }
+  }
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-smoothing: antialiased;
+  height:100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.faded { opacity: 0.5; }
+
+.button {
+  display: inline-block;
+  padding: 0 2.2em;
+  background: $primary;
+  color: $white;
+  text-decoration: none;
+  border-radius: 4em;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: .8em;
+  height: 4em;
+  line-height: 4em;
+}
+
+.container {
+  max-width: 1190px;
+  margin: 0 auto;
+  padding: 0 2em;
+  @include clearfix;
+}
+
+.feature-grid {
+  $root: &;
+  @include clearfix;
+  width: 100%;
+  font-size: 16px;
+  
+  &__column {  
+    height: auto;
+    position: relative;
+    width: 100%;
+    
+    @include desktop { 
+      width: 50%;
+    }
+    
+    &--left {
+      float: left;        
+      .content { @include desktop { text-align: left; } }
+    }  
+    
+    &--right {
+      float: right;
+      .dark:before { background: red; }
+      .content { @include desktop { text-align: right; } }
+    }
+  }
+  
+  &__item {
+    background-repeat: no-repeat;
+    width: 100%;
+    float: left;
+    position: relative;
+    background-size:cover;  
+    color: $white; 
+    
+    &[data-fade]:before { 
+      @include desktop { 
+        @include pseudo-fill
+      }
+    }
+    
+    &[data-fade="left"]:before { 
+      @include desktop { 
+        background: linear-gradient(to bottom left, $dark, transparent);
+      }
+    }  
+    
+    &[data-fade="right"]:before { 
+      @include desktop { 
+        background: linear-gradient(to bottom right, $dark, transparent); 
+      }
+    } 
+    
+    &[data-fade="top-left"]:before { 
+      @include desktop { 
+        background: linear-gradient(to top left, $dark, transparent);
+      }
+    } 
+    
+    &.dark { 
+      @include desktop { color: black; } 
+      
+      &[data-fade="left"]:before { 
+        @include desktop { 
+          background: linear-gradient(to bottom left, $light, transparent);
+        }
+      }
+      
+      &[data-fade="top-left"]:before { 
+        @include desktop { 
+          background: linear-gradient(to top left, $light, transparent);
+        }
+      } 
+      
+      &[data-fade="right"]:before { 
+        @include desktop { 
+          background: linear-gradient(to bottom right, $light, transparent);
+        }
+      } 
+    } 
+  
+    @include feature-grid-item('harnesses', 35%);
+    @include feature-grid-item('tethering', 75%);
+    @include feature-grid-item('confined-space', 45%);
+    @include feature-grid-item('anchorage', 75%);
+    @include feature-grid-item('kits', 75%);
+    @include feature-grid-item('restraint', 45%);
+    @include feature-grid-item('reels', 45%);
+    @include feature-grid-item('lifelines', 30%);
+    @include feature-grid-item('rescue', 45%);
+    @include feature-grid-item('lanyards', 75%);
+    @include feature-grid-item('tool-lanyards', 35%);
+  }
+  
+  .content {
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(40, 46, 78, 0.86), rgba(13, 23, 51, 0.97));
+    padding: 6em 3em;
+    text-align: center;
+    font-size: 100%;
+   
+    @include desktop {
+      font-size: 78%;
+      max-width: 320px;
+      background: none;
+      text-align: left;
+      position: absolute;
+      padding: 2.5em;
+    } 
+    
+    @include desktop-wide {
+      font-size: 100%;
+      padding: 3em;
+      max-width: 500px;
+    }
+    
+    h2 {
+      margin: 0 0 0.3em 0;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 2.4em;
+      small {
+        font-size: 55%;
+        display: block;
+        margin-bottom: .1em;  
+      }
+    }
+    
+    p { 
+      width: 100%;
+      line-height: 1.5;
+      display: block;
+      margin-top: 0;
+      margin-left: auto;
+      margin-bottom: 2em;
+      margin-right: auto;
+      opacity: .7;
+      @include mobile {
+        max-width: 300px;
+      }
+    }
+   
+    &--center {  
+      @include desktop {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    
+    &--center-right {
+      @include desktop {
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        text-align: right;
+      }
+    }
+    
+    &--top-left {
+      @include desktop {
+        top: 0;
+        left: 0;
+      }
+    }
+    
+    &--top-right {
+      @include desktop {
+        top: 0;
+        right: 0;
+        text-align: right;
+      }
+    }
+    
+    &--bottom-right {
+      @include desktop {
+        bottom: 0;
+        right: 0;
+        text-align: right;
+      }
+    }
+  }
+}
