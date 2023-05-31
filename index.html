@@ -26,12 +26,14 @@
         <script src="assets/java/#.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-        <link rel="stylesheet" href="assets/css/principal.css">
+        <link rel="stylesheet" href="assets/scss/dist/index3.css">
     </head>
     <body>
         <!--Navbar inicio-->
@@ -76,49 +78,101 @@
         </div>
 
         <div class="text-container">
+            
         </div>
-        
-        <!--Landing inicio-->
-
-        
-        
-        <!--Social media-->
-        
-        <!--Sección media-->
-        <div class="mid-landing__product-row">
-            <div class="product-info">
-                <h2 class="product-info__title">Ultra Profesional</h2>
-                <div class="product-info__copy">
-                    Pintura 100% acrílica con poliuretano, de atractivo acabado satinado y mate;
-                    formulada para todo tipo de interiores y exteriores. Con gran poder cubriente
-                    en seco y 100% lavable. cuenta con básicos para igualado y colores directos de moda.
+        <!--Seccion Central-->
+        <main>
+            <section class="feature-grid">
+              <div class="feature-grid__item feature-grid__item--harnesses dark">
+                <div class="content content--center">
+                  <h2><small>Línea de </small>Productos</h2>
+                  <p>Un amplío surtido en productos en las diferentes líneas de productos para cualquier idea o proyecto que tenga</p>
+                  <a href="productos.html" class="button">Línea Productos</a>
                 </div>
-                <div class="product-info__cta">
-                    <a href="pintura.html" class="button--alternate">Conozca más</a>
+              </div>
+              <div class="feature-grid__column feature-grid__column--left">
+                <div class="feature-grid__item feature-grid__item--kits" data-fade="right">
+                  <div class="content content--top-left">
+                    <h2><small>La Calle</small>de la Pintura</h2>
+                    <p>Somos una empresa 100% mexicana, concesionaria SAYER dedicada a la venta y distribución
+                        de recubrimientos para la protección, conservación, mantenimiento y embellecimiento
+                        de diversas superficies. Contamos con una gran variedad de productos y servicios de la más alta
+                        calidad, tanto para uso doméstico, como comercial e industrial. </p>
+                    <!--<a href="#!" class="button">Shop Safety Kits</a>-->
+                  </div>
                 </div>
-            </div>
-            <div class="product-photo"></div>
-        </div>
-        <!--Sección inferior-->
-        <section class="lower-landing">
-            <div class="overlay">
-                <div class="container">
-                    <div class="overlay__content">
-                        <h2 class="lower-landing__heading">Tome el control de<br> su creatividad</h2>
-                        <div class="lower-landing__copy">
-                            con más de 1200 colores. El sistema Sayer Base se desarrolló para satisfacer
-                            las necesidades de cubriente, efectos y limpieza más utilizadas por los igualadores.
-                        </div>
-                        <div class="lower-landing__cta">
-                            <a href="productos.html" class="button--white">Explore más opciones</a>
-                        </div>
-                    </div>
-
+                <div class="feature-grid__item feature-grid__item--reels dark">
+                  <div class="content content--top-left">
+                    <h2><small class="faded">Tome el control<br>de su creatividad con el </small>Igualador de Color</h2>
+                    <p>con más de 1200 colores. El sistema Sayer Base se desarrolló para satisfacer las necesidades de 
+                    cubriente, efectos y limpieza más utilizadas por los igualadores.</p>
+                    <!--<a href="#!" class="button">Shop Inertia Reels</a>-->
+                  </div>
+                </div> 
+              </div>
+              <div class="feature-grid__column feature-grid__column--right">
+                <div class="feature-grid__item feature-grid__item--rescue" data-fade="left">
+                  <div class="content content--top-right">
+                    <h2><small>Catálogo de </small>Complementos 2023</h2>
+                    <p>Toda nuestra gama de productos en un solo lugar, para su consulta en cualquier lugar</p>
+                    <a href="archivos/catalogo_complementos_2023.pdf" target="_blank" class="button">Descargar</a>
+                  </div>
                 </div>
-            </div>
+                <div class="feature-grid__item feature-grid__item--tethering dark">
+                  <div class="content content--center-right">
+                    <h2><small>Color del año 2023</small>Silencio de invierno</h2>
+                    <p>Nos complace presentar la edición 2023 de ColourFutures™ Silencio de Invierno<br> 50YY 49/191.</p>
+                    <!--<a href="#!" class="button">Shop Tethers</a>-->
+                  </div>
+                </div>
+              </div>
+              <div class="feature-grid__item feature-grid__item--lifelines" data-fade="left">
+                <div class="content content--center-right">
+                  <h2><small>Tintes Caramelo /</small>KT-2XXX</h2>
+                  <p>Los TINTES CARAMELO brindan tonos intensos, su principal característica es su luminosidad la cual hace un efecto óptico de un color muy profundo y similar al acabado de un caramelo.</p>
+                  <a href="automotriz.html" class="button">Repintado Automotríz</a>      
+                </div>
+              </div>
+              <div class="feature-grid__column feature-grid__column--left">
+                <div class="feature-grid__item feature-grid__item--lanyards dark" data-fade="right"> 
+                  <div class="content content--top-left">
+                    <h2><small>Línea </small>Poly Lack</h2>
+                    <p>Línea de recubrimientos de poliuretano ideales para barnizar pisos, lambrines, muebles, puertas de madera, 
+                        etc. Ofrecen una gran resistencia a la abrasión, golpes y al desgaste causado por un uso continuo. 
+                        También posee una gran resistencia al agua, limpiadores de uso común en el hogar y a solventes agresivos.</p>
+                    <a href="barnices.html" class="button">Catálogo</a>
+                  </div>
+                </div>
+                <div class="feature-grid__item feature-grid__item--confined-space" data-fade="right">
+                  <div class="content content--top-left">
+                    <h2><small>Línea de  </small>Selladores base silicón</h2>
+                    <p>Los selladores de silicón, para superficies lisas, son ideales para sellar ventanas, etc.</a>
+                    <a href="adhesivos.html" class="button">Línea de Selladores</a>
+                  </div>
+                </div>
+              </div>
+              <div class="feature-grid__column feature-grid__column--right">
+                <div class="feature-grid__item feature-grid__item--restraint" data-fade="left">
+                  <div class="content content--top-right">
+                    <h2><small>Línea de</small>Pinturas</h2>
+                    <p>Todo acerca de las pinturas Ultra Profesional, Máxima y Promaster</p>
+                    <a href="pintura.html" class="button">Línea de Pinturas</a>
+                  </div>
+                </div>
+                <div class="feature-grid__item feature-grid__item--anchorage dark" data-fade="top-left">
+                  <div class="content content--bottom-right">
+                    <h2><small>esmalte acrílico</small>texturizado</h2>
+                    <p>de rápido secado, alta resistencia, muy buena dureza y excelente adherencia, provee un acabado de 
+                    terminación texturizada que ayuda a disimular las imperfecciones de las superficies de metal y alarga la 
+                    vida de la película.</p>
+                    <!--<a href="#!" class="button">Shop Anchorage</a>-->
+                  </div>
+                </div>
+              </div> 
+            </section>
+          </main>
 
-        </section>
-    </main>
+
 
 
 
@@ -143,7 +197,7 @@
                                 <i class="fa fa-phone"></i>
                                 <div class="cta-text">
                                     <h4>Llámanos</h4>
-                                    <span>(55) 9127 9669 y al (55) 2589 1094</span>
+                                    <span>(55) 9127 9669 y al (55) 2589 1094 <br> Whatsapp (55) 2850 1337</span>
                                 </div>
                             </div>
                         </div>
